@@ -21,6 +21,9 @@ public class Main {
         System.out.println(passat.model);
         System.out.println(passat.yearOfProduction);
         System.out.println(passat.millage);
+
+
+
     }
 
 

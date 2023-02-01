@@ -30,7 +30,15 @@ public class Human {
         return car;
     }
 
-    public void setCar(Car car) {
-        this.car = car;
+    public void setCar(Car car, int carPrice) {
+        if (getSalary() > carPrice) {
+            System.out.println("Udało się kupić za gotówkę");
+            this.car = car;
+        } else if (getSalary() > carPrice / 12) {
+            System.out.println("Udało się kupić na kredyt (no trudno)");
+            this.car = car;
+        } else {
+            System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę");
+        }
     }
 }

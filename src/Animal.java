@@ -1,4 +1,6 @@
-public class Animal implements salleable {
+import creatures.Feedable;
+
+public class Animal implements salleable, Feedable {
     String species;
     String name;
     Double weight;
@@ -42,6 +44,12 @@ public class Animal implements salleable {
         }
 
     }
+
+    @Override
+    public void feed(double foodWeight) {
+
+    }
+
     public void takeForAWalk(){
         if(this.alive = true && this.weight > 0.5)
         {

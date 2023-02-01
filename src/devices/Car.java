@@ -15,4 +15,7 @@ public class Car extends Device {
     public void turnOn() {
         System.out.println("Silnik uruchomiony !");
     }
+    void refuel(){
+
+    }
 }

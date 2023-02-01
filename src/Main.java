@@ -23,7 +23,10 @@ public class Main {
         System.out.println(passat.millage);
 
 
-
+//zad 3 i 4
+Human sal = new Human();
+        System.out.println("Twoja wyplata to : "+ sal.getSalary());
+        sal.setSalary(5000.0);
     }
 
 

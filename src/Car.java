@@ -3,6 +3,7 @@ public class Car {
     public String model;
     public Integer yearOfProduction;
     public Double millage;
+    int price ;
 
     public Car(String producer, String model, Integer yearOfProduction) {
         this.producer = producer;

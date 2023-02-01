@@ -13,7 +13,7 @@ public class Animal {
 
     public void  feed()
     {
-        if(this.alive = true && this.weight > 0.5)
+        if(this.alive == true && this.weight > 0.5)
         {
             this.weight += 0.5;
             System.out.println("dzieki za jedzenie"+ this.weight);

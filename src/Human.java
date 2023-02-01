@@ -1,8 +1,9 @@
 public class Human {
+    String name;
     Animal pet;
-    Car car;
-    private Double Salary = 0.0 ;
+    private Car car;
 
+    private Double Salary = 0.0 ;
     public Double getSalary()
     {
         return this.Salary;
@@ -23,5 +24,13 @@ public class Human {
         {
             System.out.println("Podaj poprawną wartość !");
         }
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
     }
 }

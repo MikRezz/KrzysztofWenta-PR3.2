@@ -27,7 +27,6 @@ public class Animal implements salleable {
         else {
             System.out.println("Masz za mało pieniedzy lub zwierzak nalezy do kogos innego");
         }
-        return false;
     }
 
     public void  feed()

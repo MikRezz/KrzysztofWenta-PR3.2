@@ -43,20 +43,8 @@ Human sal = new Human();
         human1.name = "Henio"; human1.pet = panda;
         System.out.println(human1);
 
-        //zad 8
-        Human seller = new Human();
-        seller.name = "Andrzej";
-        seller.cash = 1000.0;
-        Human buyer = new Human();
-        buyer.name = "Zdzichu";
-        buyer.cash = 1000.0;
-        Animal Reksio = new Animal("canis");
-        Reksio.Price = 300.0;
-        if (Reksio.sell(seller,buyer, Reksio.Price)){
-            System.out.println("Transakcja przebiegła pomyślnie.");
-            System.out.println(buyer.getName() + " kupił od " + seller.getName() + " psa " + Reksio.name + " za cenę " + Reksio.Price + ".");
-        }
+
+    }
 
 
     }
-}

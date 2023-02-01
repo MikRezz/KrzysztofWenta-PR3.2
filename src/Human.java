@@ -1,3 +1,5 @@
+import devices.Car;
+
 public class Human {
     String name;
     Animal pet;
@@ -40,5 +42,8 @@ public class Human {
         } else {
             System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę");
         }
+    }
+    public String toString(){
+        return name +" "+ Salary +" "+ car;
     }
 }

@@ -1,9 +1,6 @@
 package devices;
 
-public class Car {
-    public String producer;
-    public String model;
-    public Integer yearOfProduction;
+public class Car extends Device {
     public Double millage;
     int price ;
 
@@ -12,5 +9,10 @@ public class Car {
         this.model = model;
         this.yearOfProduction = yearOfProduction;
         this.millage = 0.0;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Silnik uruchomiony !");
     }
 }

@@ -2,7 +2,7 @@ package devices;
 
 public class Car extends Device {
     public Double millage;
-    int price ;
+    Integer price ;
 
     public Car(String producer, String model, Integer yearOfProduction) {
         this.producer = producer;

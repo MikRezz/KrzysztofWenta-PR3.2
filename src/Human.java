@@ -4,8 +4,14 @@ public class Human {
     String name;
     Animal pet;
     private Car car;
+    Double cash;
 
     private Double Salary = 0.0 ;
+
+    public String getName() {
+        return name;
+    }
+
     public Double getSalary()
     {
         return this.Salary;

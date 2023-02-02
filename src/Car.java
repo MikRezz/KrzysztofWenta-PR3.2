@@ -1,6 +1,6 @@
-package devices;
+import devices.Device;
 
-public class Car extends Device {
+public class Car extends Device implements carsell {
     public Double millage;
     Integer price ;
 

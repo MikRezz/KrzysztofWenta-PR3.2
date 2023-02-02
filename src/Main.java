@@ -1,5 +1,3 @@
-import devices.Car;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -26,7 +24,7 @@ public class Main {
 
 
 //zad 3 i 4
-Human sal = new Human();
+Human sal = new Human("Wojtek",100.0,1);
         System.out.println("Twoja wyplata to : "+ sal.getSalary());
         sal.setSalary(5000.0);
 
@@ -39,7 +37,7 @@ Human sal = new Human();
         Car car1 = new Car("vw","pasat",2000);
         System.out.println(car1);
 
-        Human human1 = new Human();
+        Human human1 = new Human("Zenek",100.0,1);
         human1.name = "Henio"; human1.pet = panda;
         System.out.println(human1);
 

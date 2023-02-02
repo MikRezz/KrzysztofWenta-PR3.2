@@ -1,15 +1,56 @@
-import devices.Car;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Human {
     String name;
     Animal pet;
     private Car car;
+    Car[] garage;
     Double cash;
 
     private Double Salary = 0.0 ;
 
+    public Human(String name, Double cash, int defaultGarageSize) {
+        this.name = name;
+        this.cash = cash;
+        this.garage = new Car[defaultGarageSize];
+    }
+
+    public Human(String name, Car[] garage, int garageSize) {
+        this.name = name;
+        this.garage = new Car[garageSize];
+    }
+    public Car getCar(int parkingSpot) {
+        return garage[parkingSpot];
+    }
+
+    public void setCar(int parkingSpot, Car car) {
+        garage[parkingSpot] = car;
+    }
+    public double calculateGarageValue() {
+        double sum = 0;
+        for (int i = 0; i < garage.length; i++) {
+            if (garage[i] != null) {
+                sum += garage[i].value;
+            }
+        }
+        return sum;
+    }
+
+    public void sortCarsByYear() {
+        Arrays.sort(garage, new Comparator<Car>() {
+            @Override
+            public int compare(Car car1, Car car2) {
+                return Integer.compare(car1.getYearOfProduction(), car2.getYearOfProduction());
+            }
+        });
+    }
     public String getName() {
         return name;
+    }
+
+    public Car[] getGarage() {
+        return garage;
     }
 
     public Double getSalary()
